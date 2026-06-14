@@ -65,7 +65,7 @@ export default function DashboardPage() {
         <Card className="lg:col-span-2 p-10 md:p-12">
           <h3 className="text-lg font-bold text-white mb-8">Daily Activity Trend</h3>
           <div className="h-[300px] w-full">
-            <ResponsiveContainer width="100%" height="100%">
+            <ResponsiveContainer width="100%" height="100%" minHeight={300}>
               <BarChart data={data.daily.length > 0 ? data.daily : [
                 {date: '05-01', scans: 40},
                 {date: '05-02', scans: 55},
