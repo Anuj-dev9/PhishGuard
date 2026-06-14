@@ -122,7 +122,7 @@ export default function Scanner({ onScanComplete }) {
             <div><p className="eyebrow">{activeMode.kicker}</p><h2>{activeMode.title}</h2></div>
             {loading && <span className="scan-loader">Scanning</span>}
           </div>
-          <textarea aria-label={activeMode.inputLabel} onChange={(event) => setText(event.target.value)} placeholder={activeMode.placeholder} spellCheck="false" value={text} />
+          <textarea className="w-full min-h-[290px] my-4 p-5 bg-slate-800/50 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary resize-y leading-relaxed" aria-label={activeMode.inputLabel} onChange={(event) => setText(event.target.value)} placeholder={activeMode.placeholder} spellCheck="false" value={text} />
           {error && <p className="error-text">{error}</p>}
           <div className="console-actions">
             <div className="sample-actions">
