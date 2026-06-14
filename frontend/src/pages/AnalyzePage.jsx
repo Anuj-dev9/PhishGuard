@@ -38,9 +38,8 @@ export default function AnalyzePage() {
       <Card className="p-1">
         <form onSubmit={handleAnalyze} className="flex gap-2">
           <div className="relative flex-1">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500" size={20} />
             <input 
-              className="w-full bg-transparent border-none px-12 py-4 text-white placeholder:text-slate-500 focus:outline-none focus:ring-0"
+              className="w-full bg-transparent border-none px-4 py-4 text-white placeholder:text-slate-500 focus:outline-none focus:ring-0"
               placeholder="Enter URL or domain to analyze (e.g., http://login-verify.xyz)"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
